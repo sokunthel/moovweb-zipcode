@@ -53,7 +53,7 @@
               city = res.places[i]['place name'];
               state = res.places[i]['state abbreviation'];
               zipcode = res['post code'];
-              items.push(<option key={i+1} value={i+1} data-zipcode={zipcode}>{city}, {state}</option>);
+              items.push(<option key={i} value={i} data-zipcode={zipcode}>{city}, {state}</option>);
             }
             this.setState({cityState: items});
           });
